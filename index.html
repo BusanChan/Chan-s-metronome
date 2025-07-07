@@ -181,7 +181,10 @@
       bpmInput.value = bpm.toFixed(2);
       secondsPerPageText.textContent = `페이지당 초: ${secondsPerPage.toFixed(1)}초`;
       convertedBpmText.textContent = `환산 BPM: ${bpm.toFixed(2)}`;
-
+<div id="calcResult">
+  <div id="secondsPerPageText">페이지당 초: -</div>
+  <div id="convertedBpmText">환산 BPM: -</div>
+</div>
       if (isPlaying) {
         stopMetronome();
         startMetronome();
